@@ -48,7 +48,6 @@ Bonus: add this to task so it is executed each time you open folder in vscode:
     "runOn": "folderOpen"
 }
 ```
-
 - Launch/debug config for Node
 
 Go to run and debug and click create a launch.json file (will be under .vscode folder again) and choose Node
@@ -60,6 +59,17 @@ Here change program to point to our index.js file in lib (the compiled typescrip
 ```
 
 And thats all folks
+- BONUS2 (Multiple TS files - THIS IS NOT THAT USEFUL, BY THE WAY! USE COMMON.TS AND EXPORT!)
+https://www.educba.com/typescript-export-function/
+
+in tsconfig.json
+```json
+    "moduleDetection": "force",
+```
+This enables default seperation between different .ts files.
+Example, in file1.ts you have type Song{..} and in file2.ts you can again have type Song{...}
+
+
 
 ### Basic way index.ts => index.js and include in index.html file
 And this will include all the functions and stuff from .ts file. While we still can look at .ts and debug it regularly
